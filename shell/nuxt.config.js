@@ -351,7 +351,7 @@ export default function(dir, _appConfig) {
         useShortDoctype:            !dev
       },
 
-      filenames: { chunk: ({ isDev }) => isDev ? '[name].js' : '[name].[contenthash].js' },
+      filenames: { chunk: ({ isDev }) => isDev ? '[name].js' : '[contenthash].js' },
       // @TODO figure out how to split chunks up better, by product
       // optimization: {
       //   splitChunks: {
